@@ -230,7 +230,7 @@
   <project path="external/sepolicy" name="LineageOS/android_external_sepolicy" groups="pdk" />
   <project path="external/sfntly" name="LineageOS/android_external_sfntly" />
   <project path="external/sil-fonts" name="platform/external/sil-fonts" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
-  <project path="external/skia" name="lineage-mz6xx/android_external_skia" remote="sfos-xoom" revision="cm-11.0" />
+  <project path="external/skia" name="lineage-mz6xx/external_skia" remote="sfos-xoom" revision="cm-11.0" />
   <project path="external/smack" name="platform/external/smack" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="external/smali" name="LineageOS/android_external_smali" />
   <project path="external/sonivox" name="LineageOS/android_external_sonivox" groups="pdk" />
@@ -268,7 +268,7 @@
   <project path="external/zip" name="LineageOS/android_external_zip" />
   <project path="external/zlib" name="LineageOS/android_external_zlib" groups="pdk" />
   <project path="external/zxing" name="LineageOS/android_external_zxing" />
-  <project path="frameworks/av" name="lineage-mz6xx/android_frameworks_av" remote="sfos-xoom" revision="cm-11.0" />
+  <project path="frameworks/av" name="lineage-mz6xx/frameworks_av" remote="sfos-xoom" revision="cm-11.0" />
   <project path="frameworks/base" name="lineage-mz6xx/frameworks_base" remote="sfos-xoom" revision="hybris-11.0" />
   <project path="frameworks/compile/libbcc" name="LineageOS/android_frameworks_compile_libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="LineageOS/android_frameworks_compile_mclinker" groups="pdk" />
