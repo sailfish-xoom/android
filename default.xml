@@ -12,12 +12,15 @@
   <remote  name="private"
            fetch="ssh://git@github.com" />
 
+  <remote  name="sfos-xoom"
+           fetch="https://github.com" />
+
   <default revision="refs/heads/cm-11.0"
            remote="github"
            sync-c="true"
            sync-j="4" />
 
-  <project path="build" name="LineageOS/android_build" groups="pdk" >
+  <project path="build" name="lineage-mz6xx/build" remote="sfos-xoom" revision="hybris-11.0" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -25,7 +28,7 @@
 
   <project path="abi/cpp" name="LineageOS/android_abi_cpp" groups="pdk" />
   <project path="art" name="LineageOS/android_art" />
-  <project path="bionic" name="LineageOS/android_bionic" groups="pdk" />
+  <project path="bionic" name="sailfish-xoom/android_bionic" remote="sfos-xoom" revision="hybris-11.0" />
   <project path="bootable/diskinstaller" name="LineageOS/android_bootable_diskinstaller" />
   <project path="bootable/recovery" name="LineageOS/android_bootable_recovery" />
   <project path="bootable/recovery-cm" name="LineageOS/android_bootable_recovery-cm" />
@@ -70,7 +73,7 @@
   <project path="external/bouncycastle" name="LineageOS/android_external_bouncycastle" />
   <project path="external/bsdiff" name="LineageOS/android_external_bsdiff" groups="pdk" />
   <project path="external/bson" name="LineageOS/android_external_bson" />
-  <project path="external/busybox" name="LineageOS/android_external_busybox" />
+  <project path="external/busybox" name="sailfish-xoom/android_external_busybox" remote="sfos-xoom" revision="hybris-11.0" />
   <project path="external/bzip2" name="LineageOS/android_external_bzip2" groups="pdk" />
   <project path="external/cardslib" name="LineageOS/android_external_cardslib" />
   <project path="external/ceres-solver" name="platform/external/ceres-solver" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
@@ -255,7 +258,7 @@
   <project path="external/sepolicy" name="LineageOS/android_external_sepolicy" groups="pdk" />
   <project path="external/sfntly" name="LineageOS/android_external_sfntly" />
   <project path="external/sil-fonts" name="platform/external/sil-fonts" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
-  <project path="external/skia" name="LineageOS/android_external_skia" />
+  <project path="external/skia" name="lineage-mz6xx/android_external_skia" remote="sfos-xoom" revision="cm-11.0" />
   <project path="external/smack" name="platform/external/smack" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="external/smali" name="LineageOS/android_external_smali" />
   <project path="external/sonivox" name="LineageOS/android_external_sonivox" groups="pdk" />
@@ -293,15 +296,15 @@
   <project path="external/zip" name="LineageOS/android_external_zip" />
   <project path="external/zlib" name="LineageOS/android_external_zlib" groups="pdk" />
   <project path="external/zxing" name="LineageOS/android_external_zxing" />
-  <project path="frameworks/av" name="LineageOS/android_frameworks_av" groups="pdk" />
-  <project path="frameworks/base" name="LineageOS/android_frameworks_base" />
+  <project path="frameworks/av" name="lineage-mz6xx/android_frameworks_av" remote="sfos-xoom" revision="cm-11.0" />
+  <project path="frameworks/base" name="lineage-mz6xx/frameworks_base" remote="sfos-xoom" revision="hybris-11.0" />
   <project path="frameworks/compile/libbcc" name="LineageOS/android_frameworks_compile_libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="LineageOS/android_frameworks_compile_mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="LineageOS/android_frameworks_compile_slang" groups="pdk" />
   <project path="frameworks/ex" name="LineageOS/android_frameworks_ex" />
   <project path="frameworks/mff" name="LineageOS/android_frameworks_mff" />
   <project path="frameworks/ml" name="LineageOS/android_frameworks_ml" />
-  <project path="frameworks/native" name="LineageOS/android_frameworks_native" groups="pdk" />
+  <project path="frameworks/native" name="lineage-mz6xx/frameworks_native" remote="sfos-xoom" revision="hybris-11.0" />
   <project path="frameworks/opt/calendar" name="LineageOS/android_frameworks_opt_calendar" />
   <project path="frameworks/opt/carddav" name="LineageOS/android_frameworks_opt_carddav" />
   <project path="frameworks/opt/colorpicker" name="LineageOS/android_frameworks_opt_colorpicker" />
@@ -329,14 +332,14 @@
   <project path="hardware/broadcom/wlan" name="LineageOS/android_hardware_broadcom_wlan" groups="broadcom_wlan" />
   <project path="hardware/cm" name="LineageOS/android_hardware_cm" />
   <project path="hardware/invensense" name="LineageOS/android_hardware_invensense" groups="invensense" />
-  <project path="hardware/libhardware" name="LineageOS/android_hardware_libhardware" groups="pdk" />
+  <project path="hardware/libhardware" name="sailfish-xoom/android_hardware_libhardware" remote="sfos-xoom" revision="hybris-11.0" />
   <project path="hardware/libhardware_legacy" name="LineageOS/android_hardware_libhardware_legacy" groups="pdk" />
   <project path="hardware/qcom/audio" name="LineageOS/android_hardware_qcom_audio" groups="qcom" />
   <project path="hardware/qcom/audio-caf" name="LineageOS/android_hardware_qcom_audio-caf" groups="caf" />
   <project path="hardware/qcom/bt" name="LineageOS/android_hardware_qcom_bt" groups="qcom" />
   <project path="hardware/qcom/camera" name="LineageOS/android_hardware_qcom_camera" groups="qcom" />
   <project path="hardware/qcom/display" name="LineageOS/android_hardware_qcom_display" groups="qcom" />
-  <project path="hardware/qcom/display-caf" name="LineageOS/android_hardware_qcom_display-caf" groups="caf" />
+  <project path="hardware/qcom/display-caf" name="sailfish-xoom/android_hardware_qcom_display-caf" remote="sfos-xoom" revision="hybris-11.0" />
   <project path="hardware/qcom/gps" name="LineageOS/android_hardware_qcom_gps" groups="qcom" />
   <project path="hardware/qcom/keymaster" name="LineageOS/android_hardware_qcom_keymaster" groups="qcom" />
   <project path="hardware/qcom/media" name="LineageOS/android_hardware_qcom_media" groups="qcom" />
@@ -477,7 +480,7 @@
   <project path="prebuilts/tools" name="platform/prebuilts/tools" remote="aosp" revision="refs/tags/android-4.4.4_r2" groups="pdk,tools" />
   <project path="sdk" name="LineageOS/android_sdk" />
   <project path="system/ca-certificates" name="platform/system/ca-certificates" groups="pdk" remote="aosp" revision="refs/tags/android-8.1.0_r4" />
-  <project path="system/core" name="LineageOS/android_system_core" groups="pdk" />
+  <project path="system/core" name="sailfish-xoom/system_core" remote="sfos-xoom" revision="hybris-11.0" />
   <project path="system/extras" name="LineageOS/android_system_extras" groups="pdk" />
   <project path="system/media" name="LineageOS/android_system_media" groups="pdk" />
   <project path="system/netd" name="LineageOS/android_system_netd" groups="pdk" />
@@ -497,4 +500,7 @@
   <project path="vendor/cm" name="LineageOS/android_vendor_cm" >
     <copyfile src="bootimage/Android.mk" dest="kernel/Android.mk" />
   </project>
+  <project name="mer-hybris/hybris-boot" path="hybris/hybris-boot" revision="master"/>
+  <project name="mer-hybris/mer-kernel-check" path="hybris/mer-kernel-check" revision="master"/>
+  <project name="sailfishos/droidmedia" path="external/droidmedia" revision="master"/>
 </manifest>
